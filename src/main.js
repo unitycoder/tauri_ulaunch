@@ -1,5 +1,6 @@
 const { invoke } = window.__TAURI__.tauri;
 
+/*
 let greetInputEl;
 let greetMsgEl;
 
@@ -16,3 +17,15 @@ window.addEventListener("DOMContentLoaded", () => {
     greet();
   });
 });
+*/
+
+function quitGame() {
+    alert("Quit game clicked");
+}
+function saveSettings() {
+    alert("Save settings and quit clicked");
+}
+document.getElementById('settings-form').onsubmit = function(event) {
+    event.preventDefault();
+    alert("Play game with current settings");
+}
